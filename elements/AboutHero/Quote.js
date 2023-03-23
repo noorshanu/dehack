@@ -10,7 +10,7 @@ function Quote() {
 <div className="w-full max-w-[1000px] line m-auto" ></div>
     <div className='quote py-6 px-3'>
         <p className='font-[#fff] text-9xl '>“</p>
-        <h1 className='text-[#ffffffb7] text-5xl font-[300] text-left pb-4'>
+        <h1 className='text-[#ffffffb7] text-5xl font-[300] text-left pb-14 max-w-[958px]'>
         We wish to see an <span className='font-[600] text-[#fff]'> exploit-free</span>  web3 that is safe, secure and comfortable for everyone to use. 
         </h1>
 

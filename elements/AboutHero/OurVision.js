@@ -22,7 +22,7 @@ const OurVision = ({ images, width }) => {
           <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing">
             Our <span className="font-normal">Vision</span> 
           </h3>
-          <div className=" w-full max-w-[1000px] line"></div>
+          <div className=" w-full max-w-[800px] line"></div>
           {width >= 768 && (
             <div className="hidden md:grid grid-cols-3 works-wrapper md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 gap-y-20 mt-10">
               <WorkItem

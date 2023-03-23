@@ -32,7 +32,7 @@ const AboutHero = () => {
           </div>
         </div>
         
-        <p className="text-[#8D8D8D] spacing px-10 md:px-0 md:text-[25px] leading-tight py-8 max-w-[700px] mx-auto">
+        <p className="text-[#8D8D8D] spacing px-10 md:px-0 md:text-[25px] leading-tight pt-8 pb-10 max-w-[900px] mx-auto text-center">
         We are creating infrastructure to make web3 space secure for generations to come.{' '}
         
         </p>
