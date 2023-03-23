@@ -288,7 +288,9 @@ html {
   font-weight: 100;
   src: url('../public/fonts/Brinnan/BrinnanThin.otf');
 }
-
+.quote{
+  background: linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, #262626 33.33%, #262626 66.67%, rgba(38, 38, 38, 0) 100%);
+}
 .green {
   width: 300px;
   height: 300px;
