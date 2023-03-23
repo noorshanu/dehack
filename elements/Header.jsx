@@ -18,7 +18,7 @@ const Header = () => {
             <Link href='/about' className='text-white underline underline-offset-4'>About</Link>
           
            
-            <Link href='/' className='text-white underline underline-offset-4' >Contact Us</Link>
+            <Link href='/contact' className='text-white underline underline-offset-4' >Contact Us</Link>
           </nav>
           <Button
             className="hidden md:block"
