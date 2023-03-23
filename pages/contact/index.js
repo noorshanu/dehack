@@ -2,23 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { IBM_Plex_Mono } from 'next/font/google'
 import Header from '@/elements/Header'
-
-import Defi from '@/public/icons/Defi.svg'
-
 import Grid2 from '@/public/icons/Grid2.svg'
-
 import Footer from '@/elements/Footer'
-
-import Metaverse from '@/public/icons/Metaverse.svg'
-import Governance from '@/public/icons/Governance.svg'
-import Wallet from '@/public/icons/Wallet.svg'
-import Web3 from '@/public/icons/Web3.svg'
-
 import useWindowSize from '@/hooks/useSize'
-import AboutHero from '@/elements/AboutHero/AboutHero'
-import OurVision from '@/elements/AboutHero/OurVision'
-import Quote from '@/elements/AboutHero/Quote'
-import ConnectUs from '@/elements/AboutHero/ConnectUs'
+import ContactPage from '@/elements/AboutHero/ContactPage'
 
 const IBM = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -64,8 +51,8 @@ export default function Contact() {
       <Header />
       <main className="bg-[#000000]/95 backdrop-blur-lg min-h-screen">
     
-
-        <ConnectUs image={Grid2} IBM={IBM} />
+        
+        <ContactPage image={Grid2} IBM={IBM} />
         <Footer width={width} IBM={IBM} />
       </main>
     </>
