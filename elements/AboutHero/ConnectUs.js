@@ -5,8 +5,7 @@ import Image from 'next/image'
 
 import Container from '../Container'
 
-
-function ConnectUs({image}) {
+function ConnectUs({ image }) {
   return (
     <section className="text-center relative landing-section">
       <Container className="py-36 pb-48 lg:py-48 lg:pb-52">
@@ -19,32 +18,40 @@ function ConnectUs({image}) {
             className="w-full h-full lines-image mx-auto"
           />
         </div>
+        <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] ">
+        Connect With <span className="font-normal">Us</span>  
+          </h3>
+          <p>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">
             <div className="green"></div>
             <div className="blue"></div>
           </div>
         )}
-         <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10">
-            <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black"
-              placeholder="Name"
-              type="text"
-            />
-            <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black"
-              placeholder="Email"
-              type="email"
-            />
-            <button
-              type="button"
-              onClick={() => alert('Hello')}
-              className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
-            >
-              Submit
-            </button>
-          </form>
-        
+        <div className='m-auto flex justify-center'>
+        <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10">
+          <input
+            className="p-3 rounded-md outline-none border-none pl-4 text-black"
+            placeholder="Name"
+            type="text"
+          />
+          <input
+            className="p-3 rounded-md outline-none border-none pl-4 text-black"
+            placeholder="Email"
+            type="email"
+          />
+    
+          <textarea class="resize-y p-3 rounded-md outline-none border-none pl-4 text-black"  placeholder="Message"></textarea>
+          <button
+            type="button"
+            onClick={() => alert('Hello')}
+            className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
+          >
+            Submit
+          </button>
+        </form>
+        </div>
+   
       </Container>
     </section>
   )

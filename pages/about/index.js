@@ -2,27 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { IBM_Plex_Mono } from 'next/font/google'
 import Header from '@/elements/Header'
-import Rectangle from '@/public/Rectangle.svg'
+
 import Defi from '@/public/icons/Defi.svg'
-import Icon1 from '@/public/icons/Icon1.gif'
-import Icon2 from '@/public/icons/Icon2.gif'
-import Icon3 from '@/public/icons/Icon3.gif'
+
 import Grid2 from '@/public/icons/Grid2.svg'
-import Supported from '@/public/icons/Supported.svg'
-import SupportedMobile from '@/public/icons/SupportedMobile.svg'
+
 import Footer from '@/elements/Footer'
 
-import ServicesSection from '@/elements/ServicesSection'
-import WorksSection from '@/elements/WorksSection'
-import Banner from '@/elements/Banner'
-import Explanation from '@/elements/Explanation'
-import Mission from '@/elements/Mission'
-import Waitlist from '@/elements/Waitlist'
 import Metaverse from '@/public/icons/Metaverse.svg'
 import Governance from '@/public/icons/Governance.svg'
 import Wallet from '@/public/icons/Wallet.svg'
 import Web3 from '@/public/icons/Web3.svg'
-import Container from '@/elements/Container'
+
 import useWindowSize from '@/hooks/useSize'
 import AboutHero from '@/elements/AboutHero/AboutHero'
 import OurVision from '@/elements/AboutHero/OurVision'
@@ -67,12 +58,12 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://DeHack.ai/" />
         <meta property="og:site_name" content="DeHack" />
-      
+
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
       <main className="bg-[#000000]/95 backdrop-blur-lg min-h-screen">
-        <AboutHero/>
+        <AboutHero />
         <OurVision
           width={width}
           images={[
@@ -86,13 +77,9 @@ export default function About() {
             Web3,
           ]}
         />
-  
 
-     
-       
-     
-   <Quote/>
-        <ConnectUs image={Grid2} IBM={IBM}/>
+        <Quote />
+        <ConnectUs image={Grid2} IBM={IBM} />
         <Footer width={width} IBM={IBM} />
       </main>
     </>
