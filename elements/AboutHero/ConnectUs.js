@@ -18,10 +18,12 @@ function ConnectUs({ image }) {
             className="w-full h-full lines-image mx-auto"
           />
         </div>
-        <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] ">
+        <h3 className="font-[300] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] mb-10">
         Connect With <span className="font-normal">Us</span>  
+      
           </h3>
-          <p className='text-[#fff]'>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
+          <div className=" w-full max-w-[600px] line m-auto mb-6"></div>
+          <p className='text-[#8D8D8D]  max-w-[530px] m-auto'>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">
             <div className="green"></div>
@@ -45,7 +47,7 @@ function ConnectUs({ image }) {
           <button
             type="button"
             onClick={() => alert('Hello')}
-            className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
+            className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto text-white"
           >
             Submit
           </button>
