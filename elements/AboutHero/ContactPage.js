@@ -18,12 +18,14 @@ function ContactPage({ image }) {
             className="w-full h-full lines-image mx-auto"
           />
         </div>
-        <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] ">
+        <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] mb-4">
          <span className="font-normal">Contact</span> Us 
         </h3>
-        <p className="text-[#8D8D8D] max-w-[650px] m-auto text-3xl font-[300]">
+        <div className=" w-full max-w-[800px] line m-auto mb-6"></div>
+        <p className="text-[#8D8D8D] max-w-[950px] m-auto text-3xl font-[300] text-center">
         Please fill the form below and a member of our team will reach out to you as soon as possible. 
         </p>
+        
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">
             <div className="green"></div>
@@ -60,7 +62,7 @@ function ContactPage({ image }) {
             <button
               type="button"
               onClick={() => alert('Hello')}
-              className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
+              className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto text-white"
             >
               Submit
             </button>
