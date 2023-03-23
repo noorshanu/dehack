@@ -307,6 +307,22 @@ html {
   -webkit-filter: blur(100px);
 }
 
+.green1 {
+  width: 125px;
+  height: 300px;
+  background: rgba(62, 193, 0, 0.5);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
+
+.blue2 {
+  width: 125px;
+  height: 200px;
+  background: rgba(56, 176, 227, 0.5);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
+
 .gradient {
   animation: bg linear infinite 6000ms;
   -webkit-animation: bg linear infinite 6000ms;

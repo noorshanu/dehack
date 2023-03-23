@@ -8,6 +8,8 @@ import Container from '../Container'
 const AboutHero = () => {
   return (
     <section className="text-center relative landing-section">
+              <div class="green1 absolute top-[0%] -translate-x-1/2 left-[0%] !h-[70%] !blur-3xl -z-22 w-[125px]"></div>
+              <div class="blue2 absolute top-[0%] -translate-x-1/2 right-[0%] !h-[70%] !blur-3xl -z-22 w-[125px]"></div>
       <Container className="py-36 pb-48 lg:py-48 lg:pb-52">
         <div className="hidden md:block absolute inset-0 -z-10 lines">
         
