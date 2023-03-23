@@ -21,7 +21,7 @@ function ConnectUs({ image }) {
         <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing text-[#fff] ">
         Connect With <span className="font-normal">Us</span>  
           </h3>
-          <p>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
+          <p className='text-[#fff]'>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">
             <div className="green"></div>
