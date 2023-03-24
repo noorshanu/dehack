@@ -567,11 +567,7 @@ body {
 }
 
 .footer-list {
-  background: linear-gradient(
-    91.03deg,
-    rgba(255, 255, 255, 0.1155) 0%,
-    rgba(255, 255, 255, 0.0455) 100%
-  );
+
   transition: all 250ms ease-out;
 }
 

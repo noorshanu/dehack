@@ -10,7 +10,7 @@ const FooterList = ({
     <div
       
       
-      className="w-full md:w-fit footer-list flex items-center md:items-start flex-col rounded-xl md:rounded-none py-3.5 md:p-0 max-h-[50px] md:max-h-full cursor-pointer md:cursor-auto overflow-y-hidden gap-4"
+      className="w-full md:w-fit footer-list flex items-center md:items-start flex-col  md:rounded-none py-3.5 md:p-0 max-h-[150px] md:max-h-full cursor-pointer md:cursor-auto overflow-y-hidden gap-2 sm:gap-4"
     >
       <div className="flex justify-center items-center relative w-full">
         <h5
