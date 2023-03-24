@@ -32,7 +32,7 @@ function ContactPage({ image }) {
             <div className="blue"></div>
           </div>
         )}
-        <div className="m-auto flex justify-center">
+        <div className="m-auto flex justify-center p-8 sm:p-0">
           <form className="flex flex-col gap-4 w-full max-w-[600px] mt-10">
             <label className="text-[#fff] text-start">Your Name*</label>
             <input

@@ -27,9 +27,9 @@ const Footer = ({  width }) => {
           
             <FooterList >
               <ul className="flex flex-col">
-              <li>Home</li>
-                <li>About</li>
-                <li>Contact us</li>
+              <li><Link href='/'>Home</Link></li>
+                <li><Link href='/about'>About</Link> </li>
+                <li><Link href='/contact'>Contact us</Link> </li>
                
               </ul>
                
