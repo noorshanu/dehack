@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '@/components/Button'
+
 import detectOS from '@/utils/detectOS'
 import Image from 'next/image'
 
