@@ -71,7 +71,7 @@ const Header = () => {
 
               <div>
                 <Button
-                  className="block mx-[unset]"
+                  className="block mx-[unset] text-sm sm:text-lg"
                   text="Join Whitelist"
                   link="#join"
                 />
