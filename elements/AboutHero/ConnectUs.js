@@ -31,7 +31,7 @@ function ConnectUs({ image }) {
           </div>
         )}
         <div className='m-auto flex justify-center'>
-        <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10">
+        <form className="flex flex-col gap-4 w-full max-w-[350px] mt-10 sm:max-w-[400px]">
           <input
             className="p-3 rounded-md outline-none border-none pl-4 text-black"
             placeholder="Name"

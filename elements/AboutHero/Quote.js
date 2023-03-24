@@ -9,16 +9,16 @@ function Quote() {
 <div className='m-auto'>
 <div className="w-full max-w-[1000px] line m-auto" ></div>
     <div className='quote py-6 px-3'>
-        <p className='font-[#fff] text-9xl '>“</p>
-        <h1 className='text-[#ffffffb7] text-5xl font-[300] text-left pb-14 max-w-[958px]'>
+        <p className='font-[#fff] text-3xl sm:text-9xl '>“</p>
+        <h1 className='text-[#ffffffb7] text-3xl font-[300] text-left pb-14 max-w-[958px] sm:text-5xl'>
         We wish to see an <span className='font-[600] text-[#fff]'> exploit-free</span>  web3 that is safe, secure and comfortable for everyone to use. 
         </h1>
 
         <div>
-            <h1 className='text-[#ffffffb7] text-5xl font-[300] text-right py-4'>
+            <h1 className='text-[#ffffffb7] text-3xl font-[300] text-right py-4 sm:text-5xl'>
             We are <span className='font-[600] text-[#fff]'>  persistently</span> working on increasingly advanced technologies in security space for <span className='font-[600] text-[#fff]'>  mass adoption of protocols.</span>  
             </h1>
-            <p className='font-[#fff] text-9xl  rotate-180'>
+            <p className='font-[#fff] text-3xl  rotate-180 sm:text-9xl'>
             “
             </p>
         </div>
