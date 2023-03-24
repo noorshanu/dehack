@@ -6,16 +6,11 @@ import Medium from '../../public/icons/Medium.svg'
 import Github from '../../public/icons/Github.svg'
 import Telegram from '../../public/icons/Telegram.svg'
 import LinkedIn from '../../public/icons/LinkedIn.svg'
-import { useState } from 'react'
+
 import FooterList from "./FooterList"
 
-const Footer = ({ IBM, width }) => {
-  const [footerItem, setFooterItem] = useState(0)
+const Footer = ({  width }) => {
 
-  const handleFooterActive = (number) => {
-    if (number === footerItem) return setFooterItem(0)
-    setFooterItem(number)
-  }
   return (
     <footer className="mt-10 text-[#929292]">
       <Container>
@@ -30,7 +25,7 @@ const Footer = ({ IBM, width }) => {
             </div>
        
           
-            <FooterList active={footerItem === 3 } IBM={IBM} number={3}  handleFooterActive={handleFooterActive}>
+            <FooterList >
               <ul className="flex flex-col">
               <li>Home</li>
                 <li>About</li>
@@ -42,7 +37,7 @@ const Footer = ({ IBM, width }) => {
 
 
 
-            <FooterList active={footerItem === 1 } IBM={IBM} number={1}  handleFooterActive={handleFooterActive}>
+            <FooterList   >
                     <li className="flex items-center gap-3">
                         <Image src={Twitter} alt='Twitter' width={25} />
                         
@@ -59,10 +54,7 @@ const Footer = ({ IBM, width }) => {
                         <Image src={Telegram} alt='Telegram' width={25} />
                        
                     </li>
-                    <li className="flex items-center gap-3">
-                        <Image src={Medium} alt='Medium' width={25} />
-                       
-                    </li>
+
             </FooterList>
         </div>
         <div className="w-full footer-line"></div>

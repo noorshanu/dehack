@@ -88,12 +88,7 @@ const OurVision = ({ images, width }) => {
                   The ethos of blockchain technology is community, and we are working towards making sure that this community is safe for everyone to be a part of.
                   </p>
                 </div>
-
-
-
-
-
-                  <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={defaultOptions}
@@ -118,26 +113,56 @@ const OurVision = ({ images, width }) => {
                   className="mySwiper max-w-full"
                 >
                   <SwiperSlide className="!grid grid-cols-2 gap-4">
-                    <WorkItem
-                      image={images[0]}
-                      title="DeFi"
-                      desc="Prevent draining of funds using proactive security"
-                    />
-                    <WorkItem
-                      image={images[1]}
-                      title="Institutions"
-                      desc="Closely monitor High volume transaction and Detect targeted attacks"
-                    />
-                    <WorkItem
-                      image={images[2]}
-                      title="NFT"
-                      desc="Secure your NFT Marketplaces and NFT projects"
-                    />
-                    <WorkItem
-                      image={images[3]}
-                      title="Metaverse / GameFi"
-                      desc="Defend your Metaverse from malicious attacks"
-                    />
+                  <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                  <Lottie
+                    style={{ margin: 0 }}
+                    options={ThirdBox}
+                    className="loti-1"
+                    width={100}
+                  />
+
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                    The web3 technology has the potential to be a revolutionary
+                    force which can change the way humans interact with
+                    technology, and eventually have a positive impact on the
+                    world.
+                  </p>
+                </div>
+               
+
+
+
+                <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                  <Lottie
+                    style={{ margin: 0 }}
+                    options={SecondBox}
+                    className="loti-1"
+                    width={100}
+                  />
+
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                  The ethos of blockchain technology is community, and we are working towards making sure that this community is safe for everyone to be a part of.
+                  </p>
+                </div>
+
+
+
+
+
+                 <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                  <Lottie
+                    style={{ margin: 0 }}
+                    options={defaultOptions}
+                    className="loti-1"
+                    width={100}
+                    height={120}
+                  />
+
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                  We believe that security concerns are the primary reason for slow growth of web3 adopters and we are working to create a solution to that problem.
+                  </p>
+                </div>
+                
                   </SwiperSlide>
                 </Swiper>
                 <div className="flex justify-center gap-2">
