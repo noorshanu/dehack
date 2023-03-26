@@ -112,7 +112,7 @@ const OurVision = ({ images, width }) => {
                   className="mySwiper max-w-full"
                 >
                   <SwiperSlide className="!grid grid-cols-1 gap-4"> */}
-                <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                <div className="gradient-border p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={ThirdBox}
@@ -128,7 +128,7 @@ const OurVision = ({ images, width }) => {
                   </p>
                 </div>
 
-                <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                <div className="gradient-border p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={SecondBox}
@@ -143,7 +143,7 @@ const OurVision = ({ images, width }) => {
                   </p>
                 </div>
 
-                <div className="p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
+                <div className="gradient-border p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[280px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={defaultOptions}
