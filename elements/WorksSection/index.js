@@ -21,7 +21,9 @@ const WorksSection = ({ images, width }) => {
           <h3 className="font-[250] px-14 md:px-0 text-3xl md:text-7xl text-center spacing">
             How <span className="font-normal">DeHack</span> Secures
           </h3>
+          
           <div className="w-full max-w-[1000px] line"></div>
+         
           {width >= 768 && (
             <div className="hidden md:grid grid-cols-4 works-wrapper md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 gap-y-20 mt-10">
               <WorkItem

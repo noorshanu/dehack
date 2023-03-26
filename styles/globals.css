@@ -329,6 +329,17 @@ html {
   -webkit-filter: blur(100px);
 }
 
+.green-gret{
+  position: absolute;
+  width: 159px;
+  height: 263px;
+  left: 19px;
+  top: 279px;
+  background: rgba(62, 193, 0, 0.5);
+  filter: blur(151px);
+
+}
+
 .gradient {
   animation: bg linear infinite 6000ms;
   -webkit-animation: bg linear infinite 6000ms;
@@ -508,6 +519,11 @@ body {
     border-color: white;
     border-image: none;
   }
+}
+
+.green-gret{
+display: none;
+
 }
 
 .stats-container {

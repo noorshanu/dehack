@@ -21,6 +21,7 @@ const ServicesSection = ({ images, IBM, width }) => {
           <h3 className="font-[250] text-3xl px-16 spacing md:px-0 md:text-7xl text-center">
             How <span className="font-normal">DeHack</span> can help
           </h3>
+          
           <div className=" w-full max-w-[1000px] line"></div>
           {width >= 768 && (
             <div className="hidden md:grid grid-cols-4 md:grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
