@@ -46,26 +46,7 @@ const WorksSection = ({ images, width }) => {
                 title="Metaverse / GameFi"
                 desc="Defend your Metaverse from malicious attacks"
               />
-              {/* <WorkItem 
-                    image={images[4]}  
-                    title='DeFi/DeFi2.0/ CeDeFi'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[5]}  
-                    title='NFT/NFT Fi/ Governance'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[6]}  
-                    title='Metaverse/Gov Token/ GameFi'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[7]}  
-                    title='Wallets/ lP/ Treasury/ vaults'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                /> */}
+        
             </div>
           )}
           {width < 768 && (
@@ -99,28 +80,7 @@ const WorksSection = ({ images, width }) => {
                     desc="Defend your Metaverse from malicious attacks"
                   />
                 </SwiperSlide>
-                {/* <SwiperSlide className="!grid grid-cols-2 gap-4">
-                <WorkItem 
-                    image={images[0]}  
-                    title='DeFi/DeFi2.0/ CeDeFi'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[1]}  
-                    title='NFT/NFT Fi/ Governance'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[2]}  
-                    title='Metaverse/Gov Token/ GameFi'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                <WorkItem 
-                    image={images[3]}  
-                    title='Wallets/ lP/ Treasury/ vaults'
-                    desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                />
-                </SwiperSlide> */}
+               
               </Swiper>
               <div className="flex justify-center gap-2">
                 <button className="prev rotate-180 transitions" ref={prevRef}>

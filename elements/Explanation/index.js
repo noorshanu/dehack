@@ -12,29 +12,29 @@ import detectOS from '@/utils/detectOS'
 const data = {
   Monitor: {
     items: [
-      'Feed Smart Contract Address.',
-      'Advance screening using DeHack Radar.',
-      'Constant Health Tracking.',
+      'Feed Smart Contract Address',
+      'Advance screening using DeHack Radar',
+      'Constant Health Tracking',
     ],
     icon: Monitor,
   },
   Detect: {
     items: [
-      'Identifying potential targeted threats.',
-      'Analyzing patterns of malicious activities.',
-      'Predicting attacks using Security Intelligence.',
+      'Identifying potential targeted threats',
+      'Analyzing patterns of malicious activities',
+      'Predicting attacks using Security Intelligence',
     ],
     icon: Detect,
   },
   Alert: {
     items: [
-      'Lightning fast abnormality alarm.',
-      'Notifying targeted malicious interactions.',
+      'Lightning fast abnormality alarm',
+      'Notifying targeted malicious interactions',
     ],
     icon: Alert,
   },
   Prevent: {
-    items: ['Avoiding risk', 'Mitigating malicious attacks.'],
+    items: ['Avoiding risk', 'Mitigating malicious attacks'],
     icon: Prevent,
   },
 }
