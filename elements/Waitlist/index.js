@@ -13,7 +13,7 @@ const Waitlist = ({ IBM }) => {
           </div>
         )}
         <div className="p-8 md:p-12 lg:p-32 bg-black/50 flex flex-col text-center items-center gap-4 border border-white/20 rounded-[20px] md:rounded-[40px]">
-          <h3 className="text-2xl md:text-3xl">Join Our</h3>
+          <h3 className="text-2xl md:text-3xl">Join </h3>
           <h2
             className={`${IBM.className} uppercase font-bold text-5xl md:text-7xl`}
           >

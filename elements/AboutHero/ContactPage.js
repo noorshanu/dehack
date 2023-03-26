@@ -23,7 +23,7 @@ function ContactPage({ image }) {
         </h3>
         <div className=" w-full max-w-[800px] line m-auto mb-6"></div>
         <p className="text-[#8D8D8D] max-w-[950px] m-auto text-3xl font-[300] text-center">
-        Please fill the form below and a member of our team will reach out to you as soon as possible. 
+        Please fill out the form below and DeHack team will reach out to you soon 
         </p>
         
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
