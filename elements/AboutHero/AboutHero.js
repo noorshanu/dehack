@@ -37,7 +37,7 @@ const AboutHero = () => {
         
         </p>
         <Button hasShadow borderWidth="3px" text="Join Waitlist" link="#join" />
-        <p className='mx-auto underline text-lg text-[#CFCFCF] my-6'>Learn More</p>
+      
       </Container>
     </section>
   )
