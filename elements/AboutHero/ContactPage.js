@@ -62,7 +62,7 @@ function ContactPage({ image }) {
             <button
               type="button"
               onClick={() => alert('Hello')}
-              className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto text-white"
+              className="px-10 md:w-[150px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto text-white"
             >
               Submit
             </button>

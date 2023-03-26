@@ -1,5 +1,5 @@
 import Button from '@/components/Button'
-import detectOS from '@/utils/detectOS'
+
 import Image from 'next/image'
 import React from 'react'
 import Container from '../Container'

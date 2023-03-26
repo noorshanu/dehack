@@ -6,8 +6,19 @@ import Link from 'next/link'
 import { useState } from 'react'
 import OutsideClickDetector from '@/hooks/OutsideClickDetector'
 import useMediaQuery from '@/hooks/useMediaQuery'
+import { useRouter } from 'next/router'
+
+const navItems = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/contact', label: 'Contact Us' }
+]
+
 
 const Header = () => {
+  
+const router = useRouter()
+const currentPath = router.pathname
   const [sidebarVisible, setSidebarVisibility] = useState(false)
   const sidebarRef = OutsideClickDetector(() => setSidebarVisibility(false))
   const isAbove1024px = useMediaQuery('(min-width: 1024px)')
@@ -48,7 +59,7 @@ const Header = () => {
 
               {/*  */}
               <nav className="flex space-y-4 lg:space-y-[unset] flex-col lg:flex-row lg:gap-12 lg:items-center lg:justify-center lg:flex-1 text-[#8D8D8D] text-lg font-[300]  mb-8 lg:mb-0">
-                <Link
+                {/* <Link
                   href="/"
                   className="text-white underline underline-offset-4"
                 >
@@ -66,7 +77,13 @@ const Header = () => {
                   className="text-white underline underline-offset-4"
                 >
                   Contact Us
-                </Link>
+                </Link> */}
+
+{navItems.map(item => (
+  <Link href={item.path} key={item.path}>
+    <p className={currentPath === item.path ? 'active underline underline-offset-4' : 'text-white '}>{item.label}</p>
+  </Link>
+))}
               </nav>
 
               <div>
