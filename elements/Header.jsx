@@ -66,25 +66,7 @@ const currentPath = router.pathname
 
               {/*  */}
               <nav className="flex space-y-4 lg:space-y-[unset] flex-col lg:flex-row lg:gap-12 lg:items-center lg:justify-center lg:flex-1 text-[#8D8D8D] text-lg font-[300]  mb-8 lg:mb-0">
-                {/* <Link
-                  href="/"
-                  className="text-white underline underline-offset-4"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/about"
-                  className="text-white underline underline-offset-4"
-                >
-                  About
-                </Link>
-
-                <Link
-                  href="/contact"
-                  className="text-white underline underline-offset-4"
-                >
-                  Contact Us
-                </Link> */}
+           
 
 {navItems.map(item => (
   <Link href={item.path} key={item.path}>
