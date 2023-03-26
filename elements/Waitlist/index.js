@@ -1,10 +1,40 @@
 import detectOS from '@/utils/detectOS'
-import React from 'react'
+import { useEffect, useRef } from 'react';
 import Container from '../Container'
+import {  scroller } from 'react-scroll';
+import { useRouter } from 'next/router';
 
 const Waitlist = ({ IBM }) => {
+  const router = useRouter();
+  const targetRef = useRef(null);
+
+  const scrollToTarget = () => {
+    if (targetRef.current) {
+      const { id } = router.query;
+      if (id) {
+        scroller.scrollTo(id, {
+          duration: 800,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        });
+      }
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener to handle navigation events
+    const handleRouteChange = () => {
+      scrollToTarget();
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    // Remove event listener on component unmount
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
   return (
-    <section className="py-20 px-4 text-white" id="join">
+    <section className="py-20 px-4 text-white" id="join" ref={targetRef}>
       <Container className="relative">
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">

@@ -7,7 +7,7 @@ import { useState } from 'react'
 import OutsideClickDetector from '@/hooks/OutsideClickDetector'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { useRouter } from 'next/router'
-
+import { animateScroll, scroller } from 'react-scroll';
 const navItems = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About' },
@@ -22,8 +22,15 @@ const currentPath = router.pathname
   const [sidebarVisible, setSidebarVisibility] = useState(false)
   const sidebarRef = OutsideClickDetector(() => setSidebarVisibility(false))
   const isAbove1024px = useMediaQuery('(min-width: 1024px)')
-
+  const scrollToElement = (id) => {
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+  };
   return (
+    
     <>
       <header className="py-6 px-8 lg:px-4 fixed w-full top-0 z-50 bg-header">
         <Container className="xl:!px-20">
@@ -92,6 +99,9 @@ const currentPath = router.pathname
                   text="Join Waitlist"
                   link="#join"
                 />
+                <Link href="/">
+  <p onClick={() => scrollToElement('join')} >Scroll to element</p>
+</Link>
               </div>
             </div>
 
