@@ -346,7 +346,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .footer-text {
-    font-family: 'Brinnan', sans-serif !important;
+    font-family: '__IBM_Plex_Mono_830e4a' !important;
   }
 
   .green {

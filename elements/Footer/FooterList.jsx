@@ -31,9 +31,9 @@ const FooterList = ({
           -
         </p> */}
       </div>
-      <div className="w-full md:w-fit items-center flex flex-col gap-3">
+      <div className="w-full md:w-fit items-start sm:items-center flex flex-col gap-3">
         {/* <span className="h-0.5 bg-gray-400/60 rounded-lg w-[60%] mx-auto md:hidden"></span> */}
-        <ul className="flex md:flex  gap-2  font-light md:font-normal tracking-widest">
+        <ul className="flex md:flex gap-6  font-light md:font-normal tracking-widest">
           {children}
         </ul>
       </div>

@@ -16,7 +16,7 @@ const Footer = ({  width }) => {
       <Container>
         <div className="w-full line"></div>
      
-        <div className='py-16 lg:py-16 px-10 lg:px-16 flex flex-wrap flex-col items-center md:items-start md:flex-row gap-10 lg:justify-between'>
+        <div className='py-16 lg:py-16 px-10 lg:px-16 flex flex-wrap flex-col items-start md:items-center md:flex-row gap-10 lg:justify-between'>
             <div>
                 <Link href='/'>
                     <h2 className="md:-mt-4 stroke text-[60px] font-bold tracking-[0.08em] text-white md:text-transparent">DeHack</h2>
@@ -59,7 +59,7 @@ const Footer = ({  width }) => {
         </div>
         <div className="w-full footer-line"></div>
         <div className="text-center p-4">
-          <p className="spacing text-sm md:text-lg tracking-widest footer-text font-thin md:font-normal text-white md:text-inherit">
+          <p className="spacing text-sm md:text-lg tracking-widest footer-text font-thin md:font-normal text-white md:text-inherit" style={{fontFamily:'__IBM_Plex_Mono_830e4a'}}>
             All Rights Reserved {width >= 768 ? '|' : <br />} DeHack 2023
           </p>
         </div>
