@@ -55,7 +55,7 @@ const OurVision = ({ images, width }) => {
             <div className=" w-full max-w-[600px] line"></div>
             {width >= 768 && (
               <div className="hidden md:grid grid-cols-3 works-wrapper md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 gap-y-20 mt-10">
-                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
+                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border-[3px] border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={ThirdBox}
@@ -71,7 +71,7 @@ const OurVision = ({ images, width }) => {
                   </p>
                 </div>
 
-                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
+                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border-[3px] border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={SecondBox}
@@ -85,7 +85,7 @@ const OurVision = ({ images, width }) => {
                     everyone to be a part of.
                   </p>
                 </div>
-                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
+                <div className="gradient-border  p-4 py-6 md:p-5 md:py-8 2xl:p-8 text-white border-[3px] border-white bg-[#111111] flex flex-col gap-5 rounded-lg md:rounded-[20px] w-full md:w-[240px] 2xl:w-[320px]">
                   <Lottie
                     style={{ margin: 0 }}
                     options={defaultOptions}
