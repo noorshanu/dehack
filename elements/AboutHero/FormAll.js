@@ -26,43 +26,43 @@ function FormAll() {
     }
   
     const submitData = async (event) => {
-      event.preventDefault()
-      const { yourName, companyName, email, message } = userData
-  
-      if (yourName && companyName && email && message) {
-        const res = fetch(
-          'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              yourName,
-              companyName,
-              email,
-              message,
-            }),
-          }
-        )
-  
-        if (res) {
-          setUserData({
-            yourName: '',
-            companyName: '',
-            email: '',
-            message: '',
-          })
-          alert(
-            'Thanks for filling the form. We will get back to you in appropriate time.'
+        event.preventDefault()
+        const { yourName, companyName, email, message } = userData
+      
+        if (yourName && companyName && email && message && !errorMsg) {
+          const res = fetch(
+            'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                yourName,
+                companyName,
+                email,
+                message,
+              }),
+            }
           )
+      
+          if (res) {
+            setUserData({
+              yourName: '',
+              companyName: '',
+              email: '',
+              message: '',
+            })
+            alert(
+              'Thanks for filling the form. We will get back to you in appropriate time.'
+            )
+          } else {
+            alert('Please fill the right information')
+          }
         } else {
           alert('Please fill the right information')
         }
-      } else {
-        alert('Please fill the right information')
       }
-    }
   
 
   return (
