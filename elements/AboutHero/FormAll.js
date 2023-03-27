@@ -49,7 +49,7 @@ function FormAll() {
               email: "",
               message: "",
             });
-            alert("Congratulations, our executive will reach out to you soon");
+            alert("Thanks for filling the form. We will get back to you in appropriate time.");
           } else {
             alert("plz fill the data");
           }

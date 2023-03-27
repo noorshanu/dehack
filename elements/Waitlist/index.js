@@ -33,6 +33,63 @@ const Waitlist = ({ IBM }) => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, []);
+
+
+  const [userData, setUserData] = useState({
+    yourName: "",
+    
+    
+    email: "",
+    
+  
+  });
+
+  let name, value;
+  const postUserData = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+
+    setUserData({ ...userData, [name]: value });
+  };
+
+  // connect with firebase
+  const submitData = async (event) => {
+    event.preventDefault();
+    const { yourName,   email } = userData;
+
+    if (yourName &&  email  ) {
+      const res = fetch(
+        "https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            yourName,
+          
+            email,
+          
+          }),
+        }
+      );
+
+      if (res) {
+        setUserData({
+          yourName: "",
+          
+          email: "",
+        
+        });
+        alert("Congratulations,wishlist");
+      } else {
+        alert("plz fill the data");
+      }
+    } else {
+      alert("plz fill the data");
+    }
+  };
+
   return (
     <section className="py-20 px-4 text-white" id="join" ref={targetRef}>
       <Container className="relative">
@@ -53,20 +110,26 @@ const Waitlist = ({ IBM }) => {
             Be one of the first users to try DeHack beta when we first launch.
             <br />
           </p>
-          <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10">
+          <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10" method='POST'>
             <input
               className="p-3 rounded-md outline-none border-none pl-4 text-black"
               placeholder="Name"
               type="text"
+              name='yourName'
+              value={userData.yourName}
+              onChange={postUserData}
             />
             <input
               className="p-3 rounded-md outline-none border-none pl-4 text-black"
               placeholder="Email"
               type="email"
+              name='email'
+              value={userData.email}
+              onChange={postUserData}
             />
             <button
               type="button"
-              onClick={() => alert('Hello')}
+              onClick={submitData}
               className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
             >
               Submit
