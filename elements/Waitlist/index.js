@@ -81,7 +81,7 @@ const Waitlist = ({ IBM }) => {
           email: "",
         
         });
-        alert("Congratulations,wishlist");
+        alert("Thanks for filling the form. We will get back to you in appropriate time.");
       } else {
         alert("plz fill the data");
       }
