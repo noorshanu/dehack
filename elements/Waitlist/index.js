@@ -1,5 +1,5 @@
 import detectOS from '@/utils/detectOS'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef ,useState} from 'react';
 import Container from '../Container'
 import {  scroller } from 'react-scroll';
 import { useRouter } from 'next/router';
