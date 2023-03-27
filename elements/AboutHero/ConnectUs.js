@@ -7,7 +7,7 @@ import Container from '../Container'
 
 function ConnectUs({ image }) {
   return (
-    <section className="text-center relative landing-section">
+    <section className="text-center relative landing-section" id='join'>
       <Container className="py-36 pb-48 lg:py-48 lg:pb-52">
         <div className="hidden md:block absolute inset-0 -z-10 lines">
           <Image
