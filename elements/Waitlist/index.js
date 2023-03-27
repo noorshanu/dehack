@@ -83,10 +83,10 @@ const Waitlist = ({ IBM }) => {
         });
         alert("Thanks for filling the form. We will get back to you in appropriate time.");
       } else {
-        alert("plz fill the data");
+        alert("Please fill the right information");
       }
     } else {
-      alert("plz fill the data");
+      alert("Please fill the right information");
     }
   };
 
@@ -126,6 +126,8 @@ const Waitlist = ({ IBM }) => {
               name='email'
               value={userData.email}
               onChange={postUserData}
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required 
             />
             <button
               type="button"
