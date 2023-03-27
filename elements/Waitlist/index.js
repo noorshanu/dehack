@@ -62,7 +62,7 @@ const Waitlist = ({ IBM }) => {
     event.preventDefault()
     const { yourName,  email} = userData
 
-    if (yourName && companyName && email && message) {
+    if (yourName  && email ) {
       const res = fetch(
         'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
         {
