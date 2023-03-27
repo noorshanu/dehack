@@ -34,17 +34,16 @@ const Waitlist = ({ IBM }) => {
     };
   }, []);
 
+  const [email, setEmail] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  const [userData, setUserData] = useState({
-    yourName: "",
-    
-    
-    email: "",
-    
-  
-  });
 
-  let name, value;
+  const [userData, setUserData] = useState({
+    yourName: '',
+   
+    email: '',
+    
+  })
+
   const postUserData = (event) => {
     const { name, value } = event.target;
     setUserData({ ...userData, [name]: value });
@@ -59,43 +58,45 @@ const Waitlist = ({ IBM }) => {
     }
   }
 
-  // connect with firebase
   const submitData = async (event) => {
-    event.preventDefault();
-    const { yourName,   email } = userData;
+    event.preventDefault()
+    const { yourName,  email} = userData
 
-    if (yourName &&  email  ) {
+    if (yourName && companyName && email && message) {
       const res = fetch(
-        "https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json",
+        'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
         {
-          method: "POST",
+          method: 'POST',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({
             yourName,
-          
+           
             email,
-          
+         
           }),
         }
-      );
+      )
 
       if (res) {
         setUserData({
-          yourName: "",
-          
-          email: "",
+          yourName: '',
+         
+          email: '',
         
-        });
-        alert("Thanks for filling the form. We will get back to you in appropriate time.");
+        })
+        alert(
+          'Thanks for filling the form. We will get back to you in appropriate time.'
+        )
       } else {
-        alert("Please fill the right information");
+        alert('Please fill the right information')
       }
     } else {
-      alert("Please fill the right information");
+      alert('Please fill the right information')
     }
-  };
+  }
+
 
   return (
     <section className="py-20 px-4 text-white" id="join" ref={targetRef}>
