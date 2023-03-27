@@ -49,7 +49,7 @@ function FormAll() {
               email: "",
               message: "",
             });
-            alert("Data Stored");
+            alert("Congratulations, our executive will reach out to you soon");
           } else {
             alert("plz fill the data");
           }
