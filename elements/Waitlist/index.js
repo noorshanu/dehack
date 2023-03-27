@@ -34,7 +34,7 @@ const Waitlist = ({ IBM }) => {
     };
   }, []);
 
-
+  const [errorMsg, setErrorMsg] = useState("");
   const [userData, setUserData] = useState({
     yourName: "",
     
@@ -46,11 +46,18 @@ const Waitlist = ({ IBM }) => {
 
   let name, value;
   const postUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
-
+    const { name, value } = event.target;
     setUserData({ ...userData, [name]: value });
-  };
+
+    if (name === "email") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(value)) {
+        setErrorMsg("Please enter a valid email address.");
+      } else {
+        setErrorMsg("");
+      }
+    }
+  }
 
   // connect with firebase
   const submitData = async (event) => {
@@ -126,9 +133,9 @@ const Waitlist = ({ IBM }) => {
               name='email'
               value={userData.email}
               onChange={postUserData}
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              required 
+            
             />
+                 {errorMsg && <div className="error text-white">{errorMsg}</div>}
             <button
               type="button"
               onClick={submitData}

@@ -15,7 +15,7 @@ const navItems = [
 ]
 
 
-const Header = () => {
+const Header = ({image}) => {
   
 const router = useRouter()
 const currentPath = router.pathname
@@ -55,8 +55,8 @@ const currentPath = router.pathname
                     className="block w-[20px]"
                     onClick={() => setSidebarVisibility(false)}
                   >
-                    <img
-                      src="icons/cross.svg"
+                    <Image
+                      src={image}
                       className="invert w-full"
                       alt=""
                     />

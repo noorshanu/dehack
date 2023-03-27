@@ -8,6 +8,7 @@ import Icon1 from '@/public/icons/Icon1.gif'
 import Icon2 from '@/public/icons/Icon2.gif'
 import Icon3 from '@/public/icons/Icon3.gif'
 import Grid2 from '@/public/icons/Grid2.svg'
+import Cross from '@/public/icons/cross.svg'
 import Supported from '@/public/icons/Supported.svg'
 import SupportedMobile from '@/public/icons/SupportedMobile.svg'
 import Footer from '@/elements/Footer'
@@ -90,7 +91,7 @@ export default function Home() {
         <meta name="next-head-count" content="28" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Header />
+      <Header image={Cross} />
       <main className="bg-[#000000]/95 backdrop-blur-lg min-h-screen">
         <LandingSection image={Grid2} IBM={IBM} />
         <StatsSection IBM={IBM} />

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import { IBM_Plex_Mono } from 'next/font/google'
 import Header from '@/elements/Header'
 
