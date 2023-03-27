@@ -3,70 +3,67 @@ import React, { useState } from 'react'
 function FormAll() {
     const [email, setEmail] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
-
+  
     const [userData, setUserData] = useState({
-    yourName: '',
-    CompanyName: '',
-    email: '',
-    message: '',
+      yourName: '',
+      companyName: '',
+      email: '',
+      message: '',
     })
-
-     let name, value
-  const postUserData = (event) => {
-    name = event.target.name
-    value = event.target.value
-    const emailValue = event.currentTarget.value;
-    setEmail(emailValue);
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailValue)) {
-      setErrorMsg("Please enter a valid email address.");
-    } else {
-        setErrorMsg(" ");
+  
+    const postUserData = (event) => {
+      const { name, value } = event.target;
+      setUserData({ ...userData, [name]: value });
+  
+      if (name === "email") {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) {
+          setErrorMsg("Please enter a valid email address.");
+        } else {
+          setErrorMsg("");
+        }
+      }
     }
   
-
-    setUserData({ ...userData, [name]: value })
-  }
-
-  // connect with firebase
-  const submitData = async (event) => {
-    event.preventDefault()
-    const { yourName, companyName, email, message } = userData
-
-    if (yourName && companyName && email && message) {
-      const res = fetch(
-        'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            yourName,
-            companyName,
-            email,
-            message,
-          }),
-        }
-      )
-
-      if (res) {
-        setUserData({
-          yourName: '',
-          comapnyName: '',
-          email: '',
-          message: '',
-        })
-        alert(
-          'Thanks for filling the form. We will get back to you in appropriate time.'
+    const submitData = async (event) => {
+      event.preventDefault()
+      const { yourName, companyName, email, message } = userData
+  
+      if (yourName && companyName && email && message) {
+        const res = fetch(
+          'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              yourName,
+              companyName,
+              email,
+              message,
+            }),
+          }
         )
+  
+        if (res) {
+          setUserData({
+            yourName: '',
+            companyName: '',
+            email: '',
+            message: '',
+          })
+          alert(
+            'Thanks for filling the form. We will get back to you in appropriate time.'
+          )
+        } else {
+          alert('Please fill the right information')
+        }
       } else {
         alert('Please fill the right information')
       }
-    } else {
-      alert('Please fill the right information')
     }
-  }
+  
 
   return (
     <>
