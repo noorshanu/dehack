@@ -4,6 +4,7 @@ import detectOS from '@/utils/detectOS'
 import Image from 'next/image'
 
 import Container from '../Container'
+import FormAll from './FormAll'
 
 function ConnectUs({ image }) {
   return (
@@ -31,27 +32,7 @@ function ConnectUs({ image }) {
           </div>
         )}
         <div className='m-auto flex justify-center'>
-        <form className="flex flex-col gap-4 w-full max-w-[350px] mt-10 sm:max-w-[400px]">
-          <input
-            className="p-3 rounded-md outline-none border-none pl-4 text-black"
-            placeholder="Name"
-            type="text"
-          />
-          <input
-            className="p-3 rounded-md outline-none border-none pl-4 text-black"
-            placeholder="Email"
-            type="email"
-          />
-    
-          <textarea class="resize-y p-3 rounded-md outline-none border-none pl-4 text-black"  placeholder="Message"></textarea>
-          <button
-            type="button"
-            onClick={() => alert('Hello')}
-            className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto text-white"
-          >
-            Submit
-          </button>
-        </form>
+       <FormAll/>
         </div>
    
       </Container>
