@@ -122,7 +122,7 @@ const Waitlist = ({ IBM }) => {
            
           <label className="text-[#fff] text-start">Your Name*</label>
             <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black"
+              className="p-3 rounded-md outline-none border-none pl-4 text-black mb-9"
               placeholder="Name"
               type="text"
               name='yourName'
@@ -132,7 +132,7 @@ const Waitlist = ({ IBM }) => {
 
           <label className="text-[#fff] text-start">Email*</label>
             <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black"
+              className="p-3 rounded-md outline-none border-none pl-4 text-black mb-6"
               placeholder="Email"
               type="email"
               name='email'
