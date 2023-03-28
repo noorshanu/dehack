@@ -118,7 +118,7 @@ const Waitlist = ({ IBM }) => {
             Be one of the first users to try DeHack beta when we first launch.
             <br />
           </p>
-          <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10" method='POST'>
+          <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10 p-5 sm:p-0" method='POST'>
            
           <label className="text-[#fff] text-start">Your Name*</label>
             <input

@@ -68,7 +68,7 @@ function FormAll() {
   return (
     <>
       <form
-        className="flex flex-col gap-4 w-full max-w-[600px] mt-10"
+        className="flex flex-col gap-4 w-full max-w-[600px] mt-10 p-5 sm:p-0"
         method="POST"
       >
         <label className="text-[#fff] text-start">Your Name*</label>
