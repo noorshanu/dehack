@@ -304,7 +304,15 @@ html {
   filter: blur(100px);
   -webkit-filter: blur(100px);
 }
+.active{
+ 
+background: -webkit-linear-gradient(90deg, #3EC100 0%, #38B0E3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 
+
+}
 .blue {
   width: 300px;
   height: 200px;

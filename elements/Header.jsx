@@ -70,7 +70,7 @@ const currentPath = router.pathname
 
 {navItems.map(item => (
   <Link href={item.path} key={item.path}>
-    <p className={currentPath === item.path ? 'active underline underline-offset-4' : 'text-white '}>{item.label}</p>
+    <p className={currentPath === item.path ? 'active underline underline-offset-4' : 'text-[#a6a6a6] underline hover:text-white '}>{item.label}</p>
   </Link>
 ))}
               </nav>
