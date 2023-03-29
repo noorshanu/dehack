@@ -26,6 +26,7 @@ import Wallet from '@/public/icons/Wallet.svg'
 import Web3 from '@/public/icons/Web3.svg'
 import Container from '@/elements/Container'
 import useWindowSize from '@/hooks/useSize'
+import CountUp from 'react-countup';
 
 const IBM = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -137,7 +138,9 @@ export default function Home() {
         <section className="py-20 px-4  text-white text-center">
           <div className="mx-auto flex flex-col items-center gap-6 max-w-2xl">
             <p>
-              <span className={`text-7xl font-bold`}>350</span>
+              {/* <span className={`text-7xl font-bold`}>350</span> */}
+              <CountUp start={0} end={350} enableScrollSpy={true} delay={0} className='text-7xl font-bold' />
+
               <span className={`text-7xl dollar ${IBM.className} font-bold`}>
                 +
               </span>
