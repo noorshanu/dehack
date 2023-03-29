@@ -19,7 +19,7 @@ const Footer = ({  width }) => {
         <div className='py-16 lg:py-16 px-10 lg:px-16 flex flex-wrap flex-col items-start md:items-center md:flex-row gap-10 lg:justify-between'>
             <div>
                 <Link href='/'>
-                    <h2 className="md:-mt-4 stroke text-[60px] font-bold tracking-[0.08em] text-white md:text-transparent">DeHack</h2>
+                    <h2 className="md:-mt-4  text-[60px] font-bold tracking-[0.08em] text-white md:text-white">DeHack</h2>
                 </Link>
                 <p className="md:text-lg font-[300] -mt-4 text-white spacing">Using AI to secure Web3.</p>
             </div>
