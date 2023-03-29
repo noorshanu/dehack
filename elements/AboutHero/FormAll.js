@@ -74,7 +74,7 @@ function FormAll() {
         <label className="text-[#fff] text-start">Your Name*</label>
         <input
           className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
-          placeholder="Your Name"
+          
           type="text"
           name="yourName"
           value={userData.yourName}
@@ -85,7 +85,7 @@ function FormAll() {
         <label className="text-[#fff] text-start">Company Name*</label>
         <input
           className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
-          placeholder="Company Name"
+       
           type="text"
           name="companyName"
           value={userData.companyName}
@@ -96,7 +96,7 @@ function FormAll() {
         <label className="text-[#fff] text-start">Email*</label>
         <input
           className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
-          placeholder="Email"
+          
           id='email'
           type="email"
           name="email"
@@ -107,7 +107,7 @@ function FormAll() {
         <label className="text-[#fff] text-start">Message*</label>
         <textarea
           className="resize-y p-3 rounded-md outline-none border-none pl-4 text-black h-[200px]"
-          placeholder="Message"
+         
           type='text'
           name="message"
           value={userData.message}
