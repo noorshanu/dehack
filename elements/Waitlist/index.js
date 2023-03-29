@@ -64,7 +64,7 @@ const Waitlist = ({ IBM }) => {
 
     if (yourName  && email && !errorMsg) {
       const res = fetch(
-        'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
+        'https://dehack-conatct-default-rtdb.firebaseio.com/wishlistDataRecords.json',
         {
           method: 'POST',
           headers: {

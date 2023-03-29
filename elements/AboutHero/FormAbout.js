@@ -6,7 +6,7 @@ function FormAbout() {
   
     const [userData, setUserData] = useState({
       yourName: '',
-      companyName: '',
+      
       email: '',
       message: '',
     })
@@ -27,11 +27,11 @@ function FormAbout() {
   
     const submitData = async (event) => {
         event.preventDefault()
-        const { yourName, companyName, email, message } = userData
+        const { yourName,  email, message } = userData
       
-        if (yourName && companyName && email && message && !errorMsg) {
+        if (yourName &&  email && message && !errorMsg) {
           const res = fetch(
-            'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
+            'https://dehack-conatct-default-rtdb.firebaseio.com/aboutUserDataRecords.json',
             {
               method: 'POST',
               headers: {
@@ -39,7 +39,7 @@ function FormAbout() {
               },
               body: JSON.stringify({
                 yourName,
-                companyName,
+                
                 email,
                 message,
               }),
@@ -49,7 +49,7 @@ function FormAbout() {
           if (res) {
             setUserData({
               yourName: '',
-              companyName: '',
+              
               email: '',
               message: '',
             })
@@ -71,7 +71,7 @@ function FormAbout() {
         className="flex flex-col gap-4 w-full max-w-[600px] mt-10 p-5 sm:p-0"
         method="POST"
       >
-       
+        <label className="text-[#fff] text-start">Your Name*</label>
         <input
           className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
           
@@ -80,11 +80,11 @@ function FormAbout() {
           value={userData.yourName}
           onChange={postUserData}
           required
-        />
+        />s
 
-      
+    
    
-
+<label className="text-[#fff] text-start">Email*</label>
      
         <input
           className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
@@ -96,7 +96,7 @@ function FormAbout() {
           onChange={postUserData}
         />
          {errorMsg && <div className="error text-white">{errorMsg}</div>}
-     
+         <label className="text-[#fff] text-start">Message*</label>
         <textarea
           className="resize-y p-3 rounded-md outline-none border-none pl-4 text-black h-[200px]"
          

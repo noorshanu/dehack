@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import Container from '../Container'
 import FormAll from './FormAll'
+import FormAbout from './FormAbout'
 
 function ConnectUs({ image }) {
   return (
@@ -24,7 +25,7 @@ function ConnectUs({ image }) {
       
           </h3>
           <div className=" w-full max-w-[600px] line m-auto mb-6"></div>
-          <p className='text-[#8D8D8D]  max-w-[530px] m-auto'>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
+          <p className='text-[#fff]  max-w-[530px] m-auto'>Join us in our journey to make web3 a safer and healthier experience for everyone. </p>
         {typeof window !== 'undefined' && detectOS() !== 'IOS' && (
           <div className="flex items-center absolute gradient">
             <div className="green"></div>
@@ -32,7 +33,7 @@ function ConnectUs({ image }) {
           </div>
         )}
         <div className='m-auto flex justify-center'>
-       <FormAll/>
+       <FormAbout/>
         </div>
    
       </Container>
