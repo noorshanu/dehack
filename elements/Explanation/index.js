@@ -53,7 +53,7 @@ const Explanation = ({ width }) => {
         )}
         <div className="bg-[#141414] rounded-[20px] md:rounded-[40px] p-10 py-16 md:p-16 lg:p-24 flex flex-col gap-12 items-center">
           <h3 className="text-center font-thin text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl">
-            How <span className="font-normal">DeHack</span> Works.
+            How <span className="font-normal">DeHack</span> Works
           </h3>
           <div className='green-gret'></div>
           <div className="w-full max-w-2xl line"></div>
