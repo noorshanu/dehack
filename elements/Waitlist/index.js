@@ -119,10 +119,10 @@ const Waitlist = ({ IBM }) => {
             <br />
           </p>
           <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10 p-5 sm:p-0" method='POST'>
-           
+          <label className="text-[#fff] text-start">Your Name*</label>
         
             <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black "
+              className="p-3 rounded-md outline-none border-none pl-4 text-black pb-7"
               placeholder="Name"
               type="text"
               name='yourName'
@@ -130,9 +130,9 @@ const Waitlist = ({ IBM }) => {
               onChange={postUserData}
             />
 
-        
+<label className="text-[#fff] text-start">Email*</label>
             <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black "
+              className="p-3 rounded-md outline-none border-none pl-4 text-black pb-6"
               placeholder="Email"
               type="email"
               name='email'
