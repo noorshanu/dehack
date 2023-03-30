@@ -12,7 +12,7 @@ const Button = ({
       <a
         href={link}
         style={{ borderWidth }}
-        className="gradient-border inline-block relative z-10 bg-black p-3 text-[10px] px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg"
+        className="gradient-border inline-block relative z-10 bg-black p-3 text-[18px] px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg"
       >
         {text}
       </a>
