@@ -76,16 +76,16 @@ const currentPath = router.pathname
               </nav>
 
               <div>
-                {/* <Button
+                <Button
                   className="block mx-[unset] text-sm sm:text-lg"
                   text="Join Waitlist"
                   link="#join"
-                /> */}
+                />
 
-                <Link href="#join" className='gradient-border inline-block relative z-10 bg-black p-3 text-[18px] px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg'>Join Waitlist</Link>
-                <Link href="/">
+               
+                {/* <Link href="/">
   <p onClick={() => scrollToElement('join')} >Scroll to element</p>
-</Link>
+</Link> */}
               </div>
             </div>
 
