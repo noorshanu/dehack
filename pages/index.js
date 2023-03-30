@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>
+        <title>
           DeHack is a real-time monitoring and threat intelligence tool, for
           blockchain projects, that smartly detects malicious activity and
           mitigates the impact.
@@ -47,7 +47,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
-    
+
         <meta name="description" content="DeHack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -91,6 +91,7 @@ export default function Home() {
         <meta name="fortmatic-site-verification" content="u93afMgAyFfi5z0o" />
         <meta name="next-head-count" content="28" />
         <link rel="icon" href="/favicon.png" />
+       
       </Head>
       <Header image={Cross} />
       <main className="bg-[#000000]/95 backdrop-blur-lg min-h-screen">
@@ -158,6 +159,7 @@ export default function Home() {
         </section>
         <Waitlist IBM={IBM} />
         <Footer width={width} IBM={IBM} />
+        
       </main>
     </>
   )
