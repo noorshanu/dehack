@@ -6,12 +6,7 @@ import Grid2 from '@/public/icons/Grid2.svg'
 import Footer from '@/elements/Footer'
 import useWindowSize from '@/hooks/useSize'
 import ContactPage from '@/elements/AboutHero/ContactPage'
-import dynamic from 'next/dynamic'
 
-const CrispWithNoSSR = dynamic(
-  () => import('../../components/Crisp'),
-  { ssr: false }
-)
 const IBM = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['500', '700', '400', '600'],
@@ -61,7 +56,7 @@ export default function Contact() {
         
         <ContactPage image={Grid2} IBM={IBM} />
         <Footer width={width} IBM={IBM} />
-        <CrispWithNoSSR />
+       
       </main>
     </>
   )

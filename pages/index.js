@@ -30,7 +30,7 @@ import CountUp from 'react-countup';
 import dynamic from 'next/dynamic'
 
 const CrispWithNoSSR = dynamic(
-  () => import('../components/Crisp'),
+  () => import('../components/crisp'),
   { ssr: false }
 )
 const IBM = IBM_Plex_Mono({
