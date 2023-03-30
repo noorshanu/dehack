@@ -27,7 +27,12 @@ import Web3 from '@/public/icons/Web3.svg'
 import Container from '@/elements/Container'
 import useWindowSize from '@/hooks/useSize'
 import CountUp from 'react-countup';
+import dynamic from 'next/dynamic'
 
+const CrispWithNoSSR = dynamic(
+  () => import('../components/Crisp'),
+  { ssr: false }
+)
 const IBM = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['500', '700', '400', '600'],
@@ -159,7 +164,7 @@ export default function Home() {
         </section>
         <Waitlist IBM={IBM} />
         <Footer width={width} IBM={IBM} />
-        
+        <CrispWithNoSSR />
       </main>
     </>
   )
