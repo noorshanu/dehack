@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 import { animateScroll, scroller } from 'react-scroll';
 const navItems = [
   { path: '/', label: 'Home' },
-  { path: '/about', label: 'About' },
+  { path: '/about', label: 'About Us' },
   { path: '/contact', label: 'Contact Us' }
 ]
 
