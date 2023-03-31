@@ -54,11 +54,7 @@ function FormAll() {
               email: '',
               message: '',
             })
-            setShowComp(true);
-
-      setTimeout(() => {
-        setShowComp(false);
-      }, 5000);
+            setShowComp(!showComp);
           } else {
             alert('Please fill the right information')
           }

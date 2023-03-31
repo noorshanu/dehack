@@ -87,11 +87,9 @@ const Waitlist = ({ IBM }) => {
           email: '',
         
         })
-        setShowComp(true);
+        setShowComp(!showComp);
 
-        setTimeout(() => {
-          setShowComp(false);
-        }, 5000);
+     
       } else {
         alert('Please fill the right information')
       }
