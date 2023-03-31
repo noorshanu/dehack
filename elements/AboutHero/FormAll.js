@@ -90,7 +90,7 @@ function FormAll() {
 
        
         <input
-          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
+          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-4"
         placeholder='Company Name'
           type="text"
           name="companyName"
@@ -101,7 +101,7 @@ function FormAll() {
 
     
         <input
-          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
+          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-4"
           placeholder='Email'
           id='email'
           type="email"

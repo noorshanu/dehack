@@ -71,24 +71,24 @@ function FormAbout() {
         className="flex flex-col gap-4 w-full max-w-[600px] mt-10 p-5 sm:p-0"
         method="POST"
       >
-        <label className="text-[#fff] text-start">Your Name*</label>
+      
         <input
-          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
-          
+          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-4"
+          placeholder='Your Name'
           type="text"
           name="yourName"
           value={userData.yourName}
           onChange={postUserData}
           required
-        />s
+        />
 
     
    
-<label className="text-[#fff] text-start">Email*</label>
+
      
         <input
-          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-8"
-          
+          className="p-3 rounded-md outline-none border-none pl-4 text-black mb-4"
+       placeholder='Email'   
           id='email'
           type="email"
           name="email"
@@ -96,10 +96,10 @@ function FormAbout() {
           onChange={postUserData}
         />
          {errorMsg && <div className="error text-white">{errorMsg}</div>}
-         <label className="text-[#fff] text-start">Message*</label>
+      
         <textarea
           className="resize-y p-3 rounded-md outline-none border-none pl-4 text-black h-[200px]"
-         
+         placeholder='Message'
           type='text'
           name="message"
           value={userData.message}
