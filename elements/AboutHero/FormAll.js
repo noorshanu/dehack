@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import ThankPage from './ThankPage';
 
 function FormAll() {
-    const [email, setEmail] = useState("");
+  const [showComp, setShowComp] = useState(false);
     const [errorMsg, setErrorMsg] = useState("");
   
     const [userData, setUserData] = useState({
@@ -53,9 +54,11 @@ function FormAll() {
               email: '',
               message: '',
             })
-            alert(
-              'Thanks for filling the form. We will get back to you in appropriate time.'
-            )
+            setShowComp(true);
+
+      setTimeout(() => {
+        setShowComp(false);
+      }, 5000);
           } else {
             alert('Please fill the right information')
           }
@@ -67,7 +70,14 @@ function FormAll() {
 
   return (
     <>
-      <form
+     
+     {
+      showComp ?
+      (
+        <ThankPage/>
+      ):
+      (
+        <form
         className="flex flex-col gap-4 w-full max-w-[600px] mt-10 p-5 sm:p-0"
         method="POST"
       >
@@ -121,7 +131,10 @@ function FormAll() {
         >
           Submit
         </button>
-      </form>
+        </form>
+      )
+     }
+    
     </>
   )
 }
