@@ -109,7 +109,15 @@ const Waitlist = ({ IBM }) => {
           </div>
         )}
         <div className="p-8 md:p-12 lg:p-32 bg-black/50 flex flex-col text-center items-center gap-4 border border-white/20 rounded-[20px] md:rounded-[40px]">
-          <h3 className="text-2xl md:text-3xl">Join </h3>
+          
+          {
+      showComp ?
+      (
+        <ThankPage/>
+      ):
+      (
+        <>
+<h3 className="text-2xl md:text-3xl">Join </h3>
           <h2
             className={`${IBM.className} uppercase font-bold text-5xl md:text-7xl`}
           >
@@ -119,13 +127,6 @@ const Waitlist = ({ IBM }) => {
             Be one of the first users to try DeHack beta when we first launch.
             <br />
           </p>
-          {
-      showComp ?
-      (
-        <ThankPage/>
-      ):
-      (
-
         <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10 p-5 sm:p-0" method='POST'>
         <label className="text-[#fff] text-start">Your Name*</label>
       
@@ -157,6 +158,7 @@ const Waitlist = ({ IBM }) => {
             Submit
           </button>
         </form>
+        </>
       )
 }
         </div>
