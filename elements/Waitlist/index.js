@@ -3,6 +3,7 @@ import { useEffect, useRef ,useState} from 'react';
 import Container from '../Container'
 import {  scroller } from 'react-scroll';
 import { useRouter } from 'next/router';
+import ThankPage from '../AboutHero/ThankPage';
 
 const Waitlist = ({ IBM }) => {
   const router = useRouter();
@@ -34,7 +35,7 @@ const Waitlist = ({ IBM }) => {
     };
   }, []);
 
-  const [email, setEmail] = useState("");
+  const [showComp, setShowComp] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
   const [userData, setUserData] = useState({
@@ -86,9 +87,11 @@ const Waitlist = ({ IBM }) => {
           email: '',
         
         })
-        alert(
-          'Thanks for filling the form. We will get back to you in appropriate time.'
-        )
+        setShowComp(true);
+
+        setTimeout(() => {
+          setShowComp(false);
+        }, 5000);
       } else {
         alert('Please fill the right information')
       }
@@ -118,37 +121,46 @@ const Waitlist = ({ IBM }) => {
             Be one of the first users to try DeHack beta when we first launch.
             <br />
           </p>
-          <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10 p-5 sm:p-0" method='POST'>
-          <label className="text-[#fff] text-start">Your Name*</label>
-        
-            <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black mb-9"
-              placeholder="Name"
-              type="text"
-              name='yourName'
-              value={userData.yourName}
-              onChange={postUserData}
-            />
+          {
+      showComp ?
+      (
+        <ThankPage/>
+      ):
+      (
+
+        <form className="flex flex-col gap-4 w-full max-w-[400px] mt-10 p-5 sm:p-0" method='POST'>
+        <label className="text-[#fff] text-start">Your Name*</label>
+      
+          <input
+            className="p-3 rounded-md outline-none border-none pl-4 text-black mb-9"
+            
+            type="text"
+            name='yourName'
+            value={userData.yourName}
+            onChange={postUserData}
+          />
 
 <label className="text-[#fff] text-start">Email*</label>
-            <input
-              className="p-3 rounded-md outline-none border-none pl-4 text-black mb-5"
-              placeholder="Email"
-              type="email"
-              name='email'
-              value={userData.email}
-              onChange={postUserData}
+          <input
+            className="p-3 rounded-md outline-none border-none pl-4 text-black mb-5"
             
-            />
-                 {errorMsg && <div className="error text-white">{errorMsg}</div>}
-            <button
-              type="button"
-              onClick={submitData}
-              className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
-            >
-              Submit
-            </button>
-          </form>
+            type="email"
+            name='email'
+            value={userData.email}
+            onChange={postUserData}
+          
+          />
+               {errorMsg && <div className="error text-white">{errorMsg}</div>}
+          <button
+            type="button"
+            onClick={submitData}
+            className="px-10 md:w-[200px] h-[45px] border-[3px] mx-auto md: border-white rounded-md mt-auto"
+          >
+            Submit
+          </button>
+        </form>
+      )
+}
         </div>
       </Container>
     </section>

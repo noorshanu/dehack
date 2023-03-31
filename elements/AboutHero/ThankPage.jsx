@@ -6,7 +6,7 @@ import Github from '../../public/icons/Github.svg'
 import Telegram from '../../public/icons/Telegram.svg'
 import LinkedIn from '../../public/icons/LinkedIn.svg'
 
-import FooterList from '../Footer/FooterList'
+
 function ThankPage() {
   return (
     <div className='p-9 text-center'>
