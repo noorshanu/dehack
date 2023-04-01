@@ -33,7 +33,8 @@ function ThankPage() {
               <Image src={Github} alt="Github" width={25} />
             </li>
             <li className="flex items-center gap-3">
-              <Image src={Telegram} alt="Telegram" width={25} />
+              <a href="https://t.me/DeHackAI "><Image src={Telegram} alt="Telegram" width={25} /></a>
+              
             </li>
           </ul>
      

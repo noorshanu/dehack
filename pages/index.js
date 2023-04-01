@@ -43,6 +43,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        
         <title>
           DeHack is a real-time monitoring and threat intelligence tool, for
           blockchain projects, that smartly detects malicious activity and
