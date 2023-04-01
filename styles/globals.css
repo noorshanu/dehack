@@ -503,7 +503,7 @@ body {
 }
 
 .gradient-border {
-  border: 1px double transparent;
+  border: 2.5px double transparent;
   background-image: linear-gradient(black, black),
     linear-gradient(92.71deg, #3ec100 0%, #38b0e3 100%) !important;
   background-origin: border-box;

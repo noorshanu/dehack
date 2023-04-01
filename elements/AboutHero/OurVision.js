@@ -60,10 +60,10 @@ const OurVision = ({ images, width }) => {
                     style={{ margin: 0 }}
                     options={ThirdBox}
                     className="loti-1"
-                    width={100}
+                    width={160}
                   />
 
-                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px] pt-5">
                     The web3 technology has the potential to be a revolutionary
                     force which can change the way humans interact with
                     technology, and eventually have a positive impact on the
@@ -77,9 +77,10 @@ const OurVision = ({ images, width }) => {
                     options={SecondBox}
                     className="loti-1"
                     width={100}
+                    height={165}
                   />
 
-                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px] pt-5">
                     The ethos of blockchain technology is community, and we are
                     working towards making sure that this community is safe for
                     everyone to be a part of.
@@ -91,10 +92,10 @@ const OurVision = ({ images, width }) => {
                     options={defaultOptions}
                     className="loti-1"
                     width={100}
-                    height={120}
+                    height={170}
                   />
 
-                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px]">
+                  <p className="text-xs md:text-base 2xl:text-xl font-light md:font-light tracking-[1px] pt-5">
                     We believe that security concerns are the primary reason for
                     slow growth of web3 adopters and we are working to create a
                     solution to that problem.
