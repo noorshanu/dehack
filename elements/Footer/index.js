@@ -41,17 +41,20 @@ const Footer = ({ width }) => {
           </FooterList>
 
           <FooterList className="m-auto sm:m-0 ">
-            <li className="flex items-center gap-3">
-              <Image src={Twitter} alt="Twitter" width={25} />
+          <li className="flex items-center gap-3">
+            <a href="https://twitter.com/DeHackAI"><Image src={Twitter} alt="Twitter" width={25} /></a>
+              
             </li>
             <li className="flex items-center gap-3">
-              <Image src={LinkedIn} alt="LinkedIn" width={25} />
+              <a href="https://www.linkedin.com/company/dehack/"><Image src={LinkedIn} alt="LinkedIn" width={25} /></a>
+              
             </li>
             <li className="flex items-center gap-3">
               <Image src={Github} alt="Github" width={25} />
             </li>
             <li className="flex items-center gap-3">
-              <Image src={Telegram} alt="Telegram" width={25} />
+              <a href="https://t.me/DeHackAI "><Image src={Telegram} alt="Telegram" width={25} /></a>
+              
             </li>
           </FooterList>
         </div>

@@ -22,10 +22,12 @@ function ThankPage() {
           <ul className='text-center m-auto flex justify-center gap-4'>
 
           <li className="flex items-center gap-3">
-              <Image src={Twitter} alt="Twitter" width={25} />
+            <a href="https://twitter.com/DeHackAI"><Image src={Twitter} alt="Twitter" width={25} /></a>
+              
             </li>
             <li className="flex items-center gap-3">
-              <Image src={LinkedIn} alt="LinkedIn" width={25} />
+              <a href="https://www.linkedin.com/company/dehack/"><Image src={LinkedIn} alt="LinkedIn" width={25} /></a>
+              
             </li>
             <li className="flex items-center gap-3">
               <Image src={Github} alt="Github" width={25} />
