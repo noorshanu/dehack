@@ -17,8 +17,8 @@ const Header = () => {
       <header className="py-6 px-8 lg:px-4 fixed w-full top-0 z-50 bg-header">
         <Container className="xl:!px-20">
           <div className="flex justify-between items-center gap-4 relative">
-            <Link href="/">
-              <h2 className="text-white font-[900] text-3xl">DeHack</h2>
+            <Link href="/" className="text-white font-[900] text-3xl">
+              DeHack
             </Link>
 
             <div
@@ -30,8 +30,10 @@ const Header = () => {
               }`}
             >
               {!isAbove1024px && (
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-white font-[900] text-2xl">DeHack</h2>
+                <div className="flex items-center justify-between mb-6 lg:hidden">
+                  <Link href="/" className="text-white font-[900] text-2xl">
+                    DeHack
+                  </Link>
 
                   <button
                     className="block w-[20px]"
