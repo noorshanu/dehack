@@ -52,7 +52,7 @@ function FormAll() {
       
         if (yourName && companyName && email && message && !errorMsg) {
           const res = fetch(
-            'https://dehack-conatct-default-rtdb.firebaseio.com/userDataRecords.json',
+            'https://dehack-ai-default-rtdb.firebaseio.com/userDataRecords.json',
             {
               method: 'POST',
               headers: {

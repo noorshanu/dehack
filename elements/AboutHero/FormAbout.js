@@ -31,7 +31,7 @@ function FormAbout() {
       
         if (yourName &&  email && message && !errorMsg) {
           const res = fetch(
-            'https://dehack-conatct-default-rtdb.firebaseio.com/aboutUserDataRecords.json',
+            'https://dehack-ai-default-rtdb.firebaseio.com/aboutUserDataRecords.json',
             {
               method: 'POST',
               headers: {
