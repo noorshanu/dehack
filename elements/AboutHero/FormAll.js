@@ -1,27 +1,8 @@
 import React, { useState } from 'react'
-import  { useRef } from 'react';
 import ThankPage from './ThankPage';
-import emailjs from '@emailjs/browser';
+
 function FormAll() {
-  const form = useRef();
-
-    const sendEmail = () => {
-    
   
-      emailjs.sendForm('service_zeapxa2', 'template_0dm8dnd', form.current, 'Jjh1PVkv4mQ9dUVXf')
-        .then((result) => {
-     
-          
-            console.log(result.text);
-           
-            
-            
-           
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
-
   const [showComp, setShowComp] = useState(false);
     const [errorMsg, setErrorMsg] = useState("");
   
@@ -96,8 +77,7 @@ function FormAll() {
         <form
         className="flex flex-col gap-4 w-full max-w-[600px] mt-10 p-5 sm:p-0"
         method="POST"
-        onSubmit={sendEmail}
-         ref={form}
+     
       >
    
         <input
