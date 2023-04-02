@@ -1,10 +1,8 @@
-import Button from '@/components/Button'
 
-import Image from 'next/image'
 import React from 'react'
 import Container from '../Container'
-
-
+import Link from 'next/link'
+import { animateScroll, scroller } from 'react-scroll'
 const AboutHero = () => {
   return (
     <section className="text-center relative landing-section">
@@ -36,7 +34,13 @@ const AboutHero = () => {
         We are creating infrastructure to make web3 space secure for generations to come.{' '}
         
         </p>
-        <Button hasShadow borderWidth="3px" text="Join Waitlist" link="#join" />
+        
+        <Link
+                  href="/#join"
+                  className="block text-sm gradient-border relative z-10 bg-black p-3 text-[15px] sm:text-[18px] px-6 sm:px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg w-[250px] m-auto"
+                >
+                  <p onClick={() => scrollToElement('join')}>Join Waitlist</p>
+                </Link>
       
       </Container>
     </section>

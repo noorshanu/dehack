@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+
 import Image from 'next/image'
 import Container from './Container'
 import Menu from '../public/icons/Menu.svg'
@@ -7,18 +7,16 @@ import { useState } from 'react'
 import OutsideClickDetector from '@/hooks/OutsideClickDetector'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { useRouter } from 'next/router'
-import { animateScroll, scroller } from 'react-scroll';
+import { animateScroll, scroller } from 'react-scroll'
 const navItems = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About Us' },
-  { path: '/contact', label: 'Contact Us' }
+  { path: '/contact', label: 'Contact Us' },
 ]
 
-
-const Header = ({image}) => {
-  
-const router = useRouter()
-const currentPath = router.pathname
+const Header = ({ image }) => {
+  const router = useRouter()
+  const currentPath = router.pathname
   const [sidebarVisible, setSidebarVisibility] = useState(false)
   const sidebarRef = OutsideClickDetector(() => setSidebarVisibility(false))
   const isAbove1024px = useMediaQuery('(min-width: 1024px)')
@@ -26,11 +24,10 @@ const currentPath = router.pathname
     scroller.scrollTo(id, {
       duration: 800,
       delay: 0,
-      smooth: 'easeInOutQuart'
-    });
-  };
+      smooth: 'easeInOutQuart',
+    })
+  }
   return (
-    
     <>
       <header className="py-6 px-8 lg:px-4 fixed w-full top-0 z-50 bg-header">
         <Container className="xl:!px-20">
@@ -55,33 +52,35 @@ const currentPath = router.pathname
                     className="block w-[20px]"
                     onClick={() => setSidebarVisibility(false)}
                   >
-                    <Image
-                      src={image}
-                      className="invert w-full"
-                      alt=""
-                    />
+                    <Image src={image} className="invert w-full" alt="" />
                   </button>
                 </div>
               )}
 
               {/*  */}
               <nav className="flex space-y-4 lg:space-y-[unset] flex-col lg:flex-row lg:gap-12 lg:items-center lg:justify-center lg:flex-1 text-[#8D8D8D] text-lg font-[300]  mb-8 lg:mb-0">
-           
-
-{navItems.map(item => (
-  <Link href={item.path} key={item.path}>
-    <p className={currentPath === item.path ? 'active underline underline-offset-4' : 'text-[#a6a6a6] hover:text-white '}>{item.label}</p>
-  </Link>
-))}
+                {navItems.map((item) => (
+                  <Link href={item.path} key={item.path}>
+                    <p
+                      className={
+                        currentPath === item.path
+                          ? 'active underline underline-offset-4'
+                          : 'text-[#a6a6a6] hover:text-white '
+                      }
+                    >
+                      {item.label}
+                    </p>
+                  </Link>
+                ))}
               </nav>
 
               <div>
-              
-
-               
-                <Link href="/#join" className="block mx-[unset] text-sm gradient-border relative z-10 bg-black p-3 text-[15px] sm:text-[18px] px-6 sm:px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg">
-  <p onClick={() => scrollToElement('join')} >Join Waitlist</p>
-</Link>
+                <Link
+                  href="/#join"
+                  className="block mx-[unset] text-sm gradient-border relative z-10 bg-black p-3 text-[15px] sm:text-[18px] px-6 sm:px-10 md:px-14 text-white spacing cursor-pointer sm:text-lg"
+                >
+                  <p onClick={() => scrollToElement('join')}>Join Waitlist</p>
+                </Link>
               </div>
             </div>
 
