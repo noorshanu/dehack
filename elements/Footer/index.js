@@ -5,7 +5,7 @@ import Twitter from '../../public/icons/Twitter.svg'
 import Github from '../../public/icons/Github.svg'
 import Telegram from '../../public/icons/Telegram.svg'
 import LinkedIn from '../../public/icons/LinkedIn.svg'
-
+import Logo from '@/public/logo.png'
 import FooterList from './FooterList'
 
 const Footer = ({ width }) => {
@@ -15,11 +15,11 @@ const Footer = ({ width }) => {
         <div className="w-full line"></div>
 
         <div className="py-16 lg:py-16 px-10 lg:px-16 flex flex-wrap flex-col items-start md:items-center md:flex-row gap-10 lg:justify-between m-auto sm:m-0">
-          <div className="m-auto sm:m-0">
+          <div className="m-auto text-center sm:m-0">
             <Link href="/">
-              <h2 className="md:-mt-4  text-[60px] font-bold tracking-[0.08em] text-white md:text-white">
-                DeHack
-              </h2>
+              
+              <Image src={Logo} alt='' className='w-auto h-[90px] pb-6 m-auto'/>
+            
             </Link>
             <p className="md:text-lg font-[300] -mt-4 text-white spacing">
               Using AI to secure Web3.

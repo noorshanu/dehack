@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Container from './Container'
 import Menu from '../public/icons/Menu.svg'
+import Logo from '@/public/logo.png'
 import Link from 'next/link'
 import { useState } from 'react'
 import OutsideClickDetector from '@/hooks/OutsideClickDetector'
@@ -33,7 +34,7 @@ const Header = ({ image }) => {
         <Container className="xl:!px-20">
           <div className="flex justify-between items-center gap-4 relative">
           <Link href="/" className="text-white font-[900] text-3xl">
-              DeHack
+              <Image src={Logo} alt='' className='w-auto h-[58px]'/>
             </Link>
 
             <div
