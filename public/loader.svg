@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200.00001 224.50704">
+    <defs>
+        <style>
+            .cls-1{
+	            fill: url(#linear-gradient);
+	            stroke: url(#linear-gradient);
+	            stroke-dasharray: 0, 443;
+	            animation: draw 1.5s linear forwards;
+	            animation-iteration-count: 1; 
+	            fill-opacity:0; 
+	        }
+
+	        @keyframes draw {
+	            0% {
+	                stroke-dasharray: 0, 443;
+	                fill-opacity:0; 
+	            }
+
+	            70% {
+	                stroke: url(#linear-gradient);
+	                fill-opacity:0; 
+	            }
+
+	            100% {
+	                fill-opacity:1; 
+	                stroke-dasharray: 443, 0;
+	                stroke: url(#linear-gradient);
+	                fill: url(#linear-gradient);
+	            }
+	        }
+        </style>
+        <linearGradient id="linear-gradient" x1="3398.50489" y1="397.9999" x2="3398.50489" y2="-1479.45494" gradientTransform="matrix(0.13414, 0, 0, -0.13414, -355.86921, 41.79779)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3ec100" />
+            <stop offset="1" stop-color="#38b0e3" />
+        </linearGradient>
+    </defs>
+    <title>DeHackLogo_Fill_new</title>
+    <path class="cls-1" d="M95.622,1.39933a8.75672,8.75672,0,0,1,8.756,0l86.97815,50.212L131.45044,86.80128A66.13331,66.13331,0,0,0,71.45138,48.30577H14.37ZM0,98.91248v31.01073H71.45111v-.00027a15.50538,15.50538,0,0,0,0-31.0102v-.00026Zm14.67364,81.617L91.24346,224.7334V177.48726a66.0817,66.0817,0,0,1-19.79208,3.04226H14.67364Zm94.08291-11.58417V224.7334l86.86519-50.14621A8.759,8.759,0,0,0,200,167.003V66.845l-63.33066,37.20188a66.21994,66.21994,0,0,1-27.9128,64.89847Z" transform="translate(0 -0.22636)" />
+</svg>

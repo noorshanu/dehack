@@ -400,7 +400,9 @@ color: #3EC100;
   opacity: 0.9;
   transition: all ease-in-out 300ms;
 }
-
+.loader{
+  height: 100vh;
+}
 .swiper-pagination-bullets > span.swiper-pagination-bullet-active {
   background: linear-gradient(180deg, #3ec100 0%, #38b0e3 100%);
   width: 48px;
