@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 2000)
   }, [])
 
   return (
