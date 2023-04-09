@@ -5,7 +5,7 @@
 	            fill: url(#linear-gradient);
 	            stroke: url(#linear-gradient);
 	            stroke-dasharray: 0, 443;
-	            animation: draw 1.5s linear forwards;
+	            animation: draw 1s linear forwards;
 	            animation-iteration-count: 1; 
 	            fill-opacity:0; 
 	        }
