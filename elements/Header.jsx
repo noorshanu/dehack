@@ -34,7 +34,7 @@ const Header = ({ image }) => {
         <Container className="xl:!px-20">
           <div className="flex justify-between items-center gap-4 relative">
           <Link href="/" className="text-white font-[900] text-3xl">
-              <Image src={Logo} alt='' className='w-auto h-[58px]'/>
+              <Image src='https://ik.imagekit.io/l4k8brcjb/dehack/logo.png' alt='' className='w-auto h-[58px]' width={58} height={58}/>
             </Link>
 
             <div
