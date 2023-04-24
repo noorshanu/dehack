@@ -26,7 +26,7 @@ const StatsSection = ({ IBM }) => {
                   <span
                     className={`text-3xl xl:text-4xl 2xl:text-[65px] font-bold`}
                   >
-                    6.15
+                    7.1
                   </span>
                   <span
                     className={`text-xl xl:text-2xl 2xl:text-3xl ${IBM.className} pl-1`}
@@ -65,7 +65,7 @@ const StatsSection = ({ IBM }) => {
                   <span
                     className={`text-3xl xl:text-4xl 2xl:text-[65px] font-bold`}
                   >
-                    450
+                    $400k
                   </span>
                   <span
                     className={`text-3xl xl:text-4xl 2xl:text-[65px] dollar ${IBM.className} font-bold`}
@@ -74,7 +74,7 @@ const StatsSection = ({ IBM }) => {
                   </span>
                 </p>
                 <p className="font-light md:font-normal spacing md:!tracking-normal md:text-lg 2xl:text-xl">
-                  Major attacks happened in the year 2022 alone
+                Lost every hour
                 </p>
               </div>
             </div>

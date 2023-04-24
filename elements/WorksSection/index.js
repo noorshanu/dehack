@@ -38,8 +38,8 @@ const WorksSection = ({ images, width }) => {
               />
               <WorkItem
                 image={images[2]}
-                title="NFT"
-                desc="Secure your NFT Marketplaces and NFT projects"
+                title="DEX/CEX"
+                desc="Maintain trust in your exchange, by implementing proactive security"
               />
               <WorkItem
                 image={images[3]}
