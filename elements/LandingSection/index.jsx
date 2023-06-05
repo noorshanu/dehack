@@ -2,13 +2,13 @@ import Button from '@/components/Button'
 import detectOS from '@/utils/detectOS'
 import Image from 'next/image'
 import React from 'react'
-import Container from '../Container'
+import Container2 from '../Container2'
 import LandingText from './LandingText'
 
 const LandingSection = ({ IBM, image }) => {
   return (
     <section className="text-center relative landing-section">
-      <Container className="py-36 pb-48 lg:py-48 lg:pb-52">
+      <Container2 className="py-36 pb-48 lg:py-48 lg:pb-52">
         <div className="hidden md:block absolute inset-0 -z-10 lines">
           <Image
             height={1000}
@@ -44,7 +44,7 @@ const LandingSection = ({ IBM, image }) => {
         </p>
         <Button hasShadow borderWidth="3px" text="Join Waitlist" link="#join" />
         {/* <p className='mx-auto underline text-lg text-[#CFCFCF] my-6'>Learn More</p> */}
-      </Container>
+      </Container2>
     </section>
   )
 }

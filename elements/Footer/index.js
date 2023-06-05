@@ -10,8 +10,8 @@ import FooterList from './FooterList'
 
 const Footer = ({ width }) => {
   return (
-    <footer className="mt-10 text-[#929292] m-auto sm:m-0">
-      <Container className="m-auto sm:m-0">
+    <footer className="mt-10 text-[#929292] m-auto sm:mx-auto">
+      <Container className="m-auto sm:mx-auto">
         <div className="w-full line"></div>
 
         <div className="py-16 lg:py-16 px-10 lg:px-16 flex flex-wrap flex-col items-start md:items-center md:flex-row gap-10 lg:justify-between m-auto sm:m-0">

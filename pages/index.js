@@ -164,7 +164,7 @@ export default function Home() {
           </div>
         </section>
         <Waitlist IBM={IBM} />
-        <Footer width={width} IBM={IBM} />
+        <Footer width={width} IBM={IBM}  />
         <CrispWithNoSSR />
       </main>
     </>

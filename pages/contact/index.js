@@ -55,7 +55,7 @@ export default function Contact() {
     
         
         <ContactPage image={Grid2} IBM={IBM} />
-        <Footer width={width} IBM={IBM} />
+        <Footer width={width} IBM={IBM} />  
        
       </main>
     </>

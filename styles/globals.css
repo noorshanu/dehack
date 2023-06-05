@@ -347,12 +347,12 @@ color: #3EC100;
 }
 
 .gradient {
-  animation: bg linear infinite 6000ms;
-  -webkit-animation: bg linear infinite 6000ms;
-  -moz-animation: bg linear infinite 6000ms;
-  -o-animation: bg linear infinite 6000ms;
+  animation: bg linear infinite 4000ms;
+  -webkit-animation: bg linear infinite 4000ms;
+  -moz-animation: bg linear infinite 4000ms;
+  -o-animation: bg linear infinite 4000ms;
   -webkit-animation-name: bg;
-  -webkit-animation-duration: 6000ms;
+  -webkit-animation-duration: 4000ms;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-backface-visibility: hidden;
