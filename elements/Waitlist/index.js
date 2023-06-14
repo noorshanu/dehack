@@ -88,7 +88,7 @@ const Waitlist = ({ IBM }) => {
         
         })
         setShowComp(!showComp);
-
+console.log(setUserData);
      
       } else {
         alert('Please fill the right information')
